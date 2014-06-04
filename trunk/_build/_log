@@ -1,0 +1,112 @@
+### Starting build.
+# Target: hunpos, tags: {  }
+mkdir hunpos
+# Target: hunpos/trainer.ml.depends, tags: { extension:ml, file:hunpos/trainer.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/trainer.ml > hunpos/trainer.ml.depends
+# Target: hunpos/lib, tags: {  }
+mkdir hunpos/lib
+# Target: hunpos/lib/getopt.mli.depends, tags: { extension:mli, file:hunpos/lib/getopt.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/lib/getopt.mli > hunpos/lib/getopt.mli.depends
+# Target: hunpos/hmm_tagger.ml.depends, tags: { extension:ml, file:hunpos/hmm_tagger.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/hmm_tagger.ml > hunpos/hmm_tagger.ml.depends
+# Target: hunpos/io.ml.depends, tags: { extension:ml, file:hunpos/io.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/io.ml > hunpos/io.ml.depends
+# Target: util, tags: {  }
+mkdir util
+# Target: util/parse.ml.depends, tags: { extension:ml, file:util/parse.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules util/parse.ml > util/parse.ml.depends
+# Target: util/parse.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:util/parse.cmo, file:util/parse.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I util -I hunpos -I hunpos/lib -o util/parse.cmo util/parse.ml
+# Target: hunpos/lexicon.ml.depends, tags: { extension:ml, file:hunpos/lexicon.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/lexicon.ml > hunpos/lexicon.ml.depends
+# Target: util/mfhash.ml.depends, tags: { extension:ml, file:util/mfhash.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules util/mfhash.ml > util/mfhash.ml.depends
+# Target: util/mfhash.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:util/mfhash.cmo, file:util/mfhash.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I util -I hunpos -I hunpos/lib -o util/mfhash.cmo util/mfhash.ml
+# Target: hunpos/linear_interpolated_lm.ml.depends, tags: { extension:ml, file:hunpos/linear_interpolated_lm.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/linear_interpolated_lm.ml > hunpos/linear_interpolated_lm.ml.depends
+# Target: util/amap.ml.depends, tags: { extension:ml, file:util/amap.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules util/amap.ml > util/amap.ml.depends
+# Target: util/amap.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:util/amap.cmo, file:util/amap.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I util -I hunpos -I hunpos/lib -o util/amap.cmo util/amap.ml
+# Target: hunpos/ngram.ml.depends, tags: { extension:ml, file:hunpos/ngram.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/ngram.ml > hunpos/ngram.ml.depends
+# Target: hunpos/special_tokens.ml.depends, tags: { extension:ml, file:hunpos/special_tokens.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/special_tokens.ml > hunpos/special_tokens.ml.depends
+# Target: hunpos/suffix_guesser.ml.depends, tags: { extension:ml, file:hunpos/suffix_guesser.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/suffix_guesser.ml > hunpos/suffix_guesser.ml.depends
+# Target: hunpos/viterbi.ml.depends, tags: { extension:ml, file:hunpos/viterbi.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/viterbi.ml > hunpos/viterbi.ml.depends
+# Target: util/vocab.mli.depends, tags: { extension:mli, file:util/vocab.mli, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules util/vocab.mli > util/vocab.mli.depends
+# Target: hunpos/io.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/io.cmo, file:hunpos/io.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/io.cmo hunpos/io.ml
+# Target: hunpos/lexicon.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/lexicon.cmo, file:hunpos/lexicon.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/lexicon.cmo hunpos/lexicon.ml
+# Target: hunpos/linear_interpolated_lm.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/linear_interpolated_lm.cmo, file:hunpos/linear_interpolated_lm.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/linear_interpolated_lm.cmo hunpos/linear_interpolated_lm.ml
+# Target: hunpos/ngram.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/ngram.cmo, file:hunpos/ngram.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/ngram.cmo hunpos/ngram.ml
+# Target: hunpos/special_tokens.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/special_tokens.cmo, file:hunpos/special_tokens.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/special_tokens.cmo hunpos/special_tokens.ml
+# Target: hunpos/suffix_guesser.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/suffix_guesser.cmo, file:hunpos/suffix_guesser.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/suffix_guesser.cmo hunpos/suffix_guesser.ml
+# Target: hunpos/viterbi.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/viterbi.cmo, file:hunpos/viterbi.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/viterbi.cmo hunpos/viterbi.ml
+# Target: util/vocab.cmi, tags: { byte, compile, extension:mli, file:util/vocab.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I util -I hunpos -I hunpos/lib -o util/vocab.cmi util/vocab.mli
+# Target: hunpos/lib/getopt.cmi, tags: { byte, compile, extension:mli, file:hunpos/lib/getopt.mli, interf, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos/lib -I util -I hunpos -o hunpos/lib/getopt.cmi hunpos/lib/getopt.mli
+# Target: hunpos/hmm_tagger.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/hmm_tagger.cmo, file:hunpos/hmm_tagger.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/hmm_tagger.cmo hunpos/hmm_tagger.ml
+# Target: hunpos/trainer.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/trainer.cmo, file:hunpos/trainer.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/trainer.cmo hunpos/trainer.ml
+# Target: hunpos/lib/getopt.ml.depends, tags: { extension:ml, file:hunpos/lib/getopt.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/lib/getopt.ml > hunpos/lib/getopt.ml.depends
+# Target: util/parse.cmx, tags: { compile, extension:cmx, extension:ml, file:util/parse.cmx, file:util/parse.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I util -I hunpos -I hunpos/lib -o util/parse.cmx util/parse.ml
+# Target: util/mfhash.cmx, tags: { compile, extension:cmx, extension:ml, file:util/mfhash.cmx, file:util/mfhash.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I util -I hunpos -I hunpos/lib -o util/mfhash.cmx util/mfhash.ml
+# Target: util/amap.cmx, tags: { compile, extension:cmx, extension:ml, file:util/amap.cmx, file:util/amap.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I util -I hunpos -I hunpos/lib -o util/amap.cmx util/amap.ml
+# Target: util/vocab.ml.depends, tags: { extension:ml, file:util/vocab.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules util/vocab.ml > util/vocab.ml.depends
+# Target: hunpos/io.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/io.cmx, file:hunpos/io.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/io.cmx hunpos/io.ml
+# Target: hunpos/lexicon.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/lexicon.cmx, file:hunpos/lexicon.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/lexicon.cmx hunpos/lexicon.ml
+# Target: hunpos/linear_interpolated_lm.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/linear_interpolated_lm.cmx, file:hunpos/linear_interpolated_lm.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/linear_interpolated_lm.cmx hunpos/linear_interpolated_lm.ml
+# Target: hunpos/ngram.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/ngram.cmx, file:hunpos/ngram.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/ngram.cmx hunpos/ngram.ml
+# Target: hunpos/special_tokens.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/special_tokens.cmx, file:hunpos/special_tokens.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/special_tokens.cmx hunpos/special_tokens.ml
+# Target: hunpos/suffix_guesser.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/suffix_guesser.cmx, file:hunpos/suffix_guesser.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/suffix_guesser.cmx hunpos/suffix_guesser.ml
+# Target: hunpos/viterbi.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/viterbi.cmx, file:hunpos/viterbi.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/viterbi.cmx hunpos/viterbi.ml
+# Target: util/vocab.cmx, tags: { compile, extension:cmx, extension:ml, file:util/vocab.cmx, file:util/vocab.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I util -I hunpos -I hunpos/lib -o util/vocab.cmx util/vocab.ml
+# Target: hunpos/lib/getopt.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/lib/getopt.cmx, file:hunpos/lib/getopt.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos/lib -I util -I hunpos -o hunpos/lib/getopt.cmx hunpos/lib/getopt.ml
+# Target: hunpos/hmm_tagger.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/hmm_tagger.cmx, file:hunpos/hmm_tagger.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/hmm_tagger.cmx hunpos/hmm_tagger.ml
+# Target: hunpos/trainer.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/trainer.cmx, file:hunpos/trainer.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/trainer.cmx hunpos/trainer.ml
+# Target: hunpos/trainer.native, tags: { dont_link_with, extension:native, file:hunpos/trainer.native, link, native, ocaml, program, quiet, traverse }
+/usr/bin/ocamlopt str.cmxa util/parse.cmx hunpos/io.cmx util/mfhash.cmx hunpos/lexicon.cmx util/amap.cmx hunpos/linear_interpolated_lm.cmx hunpos/ngram.cmx hunpos/special_tokens.cmx hunpos/suffix_guesser.cmx hunpos/viterbi.cmx util/vocab.cmx hunpos/hmm_tagger.cmx hunpos/lib/getopt.cmx hunpos/trainer.cmx -o hunpos/trainer.native
+# Target: hunpos/tagger.ml.depends, tags: { extension:ml, file:hunpos/tagger.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/tagger.ml > hunpos/tagger.ml.depends
+# Target: hunpos/morphtable.ml.depends, tags: { extension:ml, file:hunpos/morphtable.ml, ocaml, ocamldep, quiet, traverse }
+/usr/bin/ocamldep -modules hunpos/morphtable.ml > hunpos/morphtable.ml.depends
+# Target: hunpos/morphtable.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/morphtable.cmo, file:hunpos/morphtable.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/morphtable.cmo hunpos/morphtable.ml
+# Target: hunpos/tagger.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hunpos/tagger.cmo, file:hunpos/tagger.ml, implem, ocaml, quiet, traverse }
+/usr/bin/ocamlc -c -I hunpos -I util -I hunpos/lib -o hunpos/tagger.cmo hunpos/tagger.ml
+# Target: hunpos/morphtable.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/morphtable.cmx, file:hunpos/morphtable.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/morphtable.cmx hunpos/morphtable.ml
+# Target: hunpos/tagger.cmx, tags: { compile, extension:cmx, extension:ml, file:hunpos/tagger.cmx, file:hunpos/tagger.ml, implem, native, ocaml, quiet, traverse }
+/usr/bin/ocamlopt -c -I hunpos -I util -I hunpos/lib -o hunpos/tagger.cmx hunpos/tagger.ml
+# Target: hunpos/tagger.native, tags: { dont_link_with, extension:native, file:hunpos/tagger.native, link, native, ocaml, program, quiet, traverse }
+/usr/bin/ocamlopt str.cmxa util/parse.cmx hunpos/io.cmx util/mfhash.cmx hunpos/lexicon.cmx util/amap.cmx hunpos/linear_interpolated_lm.cmx hunpos/ngram.cmx hunpos/special_tokens.cmx hunpos/suffix_guesser.cmx hunpos/viterbi.cmx util/vocab.cmx hunpos/hmm_tagger.cmx hunpos/lib/getopt.cmx hunpos/morphtable.cmx hunpos/tagger.cmx -o hunpos/tagger.native
+# Compilation successful.

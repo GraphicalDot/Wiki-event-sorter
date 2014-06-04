@@ -1,0 +1,15 @@
+INSTRUCTIONS
+------------
+
+OS X and Linux:
+  * Run install.sh from the current directory
+  * Overwrite the existing .vimrc file and .vim folder
+
+Windows:
+  * Copy vimrc and vim to the appropriate locations
+  * Rename vimrc and vim to the necessary filenames
+
+Once you have completed the above instructions, restart all Vim instances to see
+your new environment.
+
+Thank you for using sachet.

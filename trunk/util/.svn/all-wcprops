@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/107/trunk/util
+END
+vocab.mli
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/39/trunk/util/vocab.mli
+END
+assoclist.ml
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/20/trunk/util/assoclist.ml
+END
+mfhash_test.ml
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/76/trunk/util/mfhash_test.ml
+END
+mfhash.ml
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/107/trunk/util/mfhash.ml
+END
+ocautil.mllib
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/91/trunk/util/ocautil.mllib
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/69/trunk/util/build
+END
+parse.ml
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/107/trunk/util/parse.ml
+END
+vocab.ml
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/72/trunk/util/vocab.ml
+END
+logmath.ml
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/20/trunk/util/logmath.ml
+END
+amap.ml
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/91/trunk/util/amap.ml
+END
+META
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/20/trunk/util/META
+END
+ocamap.ml
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/91/trunk/util/ocamap.ml
+END

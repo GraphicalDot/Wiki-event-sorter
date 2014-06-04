@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title img=>Laadder</title>
+		<meta name="description" content="Tiorg">
+		<meta charset="UTF-8">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/tablecloth.css" rel="stylesheet">
+		<script src="js/libs/jquery/jquery.js"></script>
+		<script type="text/javascript" src="js/libs/bootstrap/bootstrap.js"></script>
+		<script type="text/javascript" src="js/libs/bootstrap/bootstrap-tooltip.js"></script>
+		<script type="text/javascript" src="js/libs/bootstrap/bootstrap-popover.js"></script>
+		<script type="text/javascript" src="js/libs/bootstrap/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="js/libs/bootstrap/bootstrap-dropdown.js"></script>
+		<script type="text/javascript" src="js/libs/bootstrap/twitter-bootstrap-hover-dropdown.js"></script>
+		<script type="text/javascript" src="js/libs/handlebars/handlebars-1.0.rc.1.min.js"></script>
+		<script type="text/javascript" src="js/libs/mustache/mustache.js"></script>
+		<script type="text/javascript" src="js/libs/underscore/underscore.js"></script>
+		<script type="text/javascript" src="js/libs/underscore/underscore.string.min.js"></script>
+		<script type="text/javascript" src="js/libs/bootbox/bootbox.js"></script>
+		<script type="text/javascript" src="js/libs/tablecloth/jquery.metadata.js"></script>
+		<script type="text/javascript" src="js/libs/tablecloth/jquery.tablesorter.js"></script>
+		<script type="text/javascript" src="js/libs/tablecloth/jquery.tablecloth.js"></script>
+		<script type="text/javascript" src="js/libs/backbone/backbone.js"></script>
+		<script type="text/javascript" src="js/libs/Jquery-validate/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/libs/jquery-cookie/jquery.cookie.js"></script>
+
+	</head>
+	<body>
+
+	<script type="text/x-mustache-template" id="root-template">
+		<fieldset class="well" >
+            <div class="control-group">
+                <label class="control-label">Search</label>
+                    <div class="controls">
+			    <input  type="text" id="searchQuery" class="input-xlarge span5" required="required" placeholder="enter the term to search" >
+			    <button type="submit" id="submitQuery" class="btn btn-primary" style="width: 15%">Submit</button>
+		    </div>
+            </div>
+
+		</fieldset>
+	</script>
+	<script type="text/x-mustache-template" id="root-row-template">
+<!--		<form class="form-horizontal plan">
+	<fieldset class="well"> -->
+            <div class="row-fluid plan">   
+		<div class="span2">
+			<p style="padding-top: 20%; text-align: center">{{actualDate}}</p>
+		</div>
+            	<div class="span10">
+<!--			<form class="form-horizontal plan">
+	<fieldset class="well" > -->
+            				<div class="control-group">
+						<p>{{text}}</p>
+		    			</div>
+		<!--		</fieldset>
+</form> -->
+            			</div>
+			<!--	</fieldset>
+	</form> -->
+	</div>
+</script>
+	<script type="text/x-mustache-template" id="root-row-error-template">
+		<div class="span4">
+			<img src="{{imageSrc}}" width="100%" height="100%">
+		</div>
+            	<div class="span8">
+			<form class="form-horizontal plan">
+				<fieldset class="well" >
+            				<div class="control-group">
+						<p>{{text}}</p>
+		    			</div>
+				</fieldset>
+			</form>
+		</div>
+	</script>
+<div class="container-fluid">                                                                                                              
+            <div class="row-fluid">   
+		                
+                
+                <div class="navbar">
+                    <div class="navbar-inner">
+        
+                        <a class="brand span5" href="#">Laadder 0.1</a>
+                            <div class="nav-collapse collapse" id="header-bar">
+                                <ul class="nav">
+                                </ul>
+                            </div>
+                    </div>
+            </div>
+        </div>
+
+            
+        <div class="row-fluid" >
+                    <div class="span1">
+                    </div>
+                    <div class="span10">
+                        <div class="dynamic_display_header">
+			</div>
+                        <div class="dynamic_display">
+			</div>
+                    </div>
+                </div>
+    <script src="js/main-backbone.js"></script>
+    <script>$(function() { App.boot($('.dynamic_display_header')); });</script> 
+
+
+    </body>
+</html>
+
+
+
+

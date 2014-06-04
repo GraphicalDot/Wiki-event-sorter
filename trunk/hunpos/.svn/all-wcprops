@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/112/trunk/hunpos
+END
+lexicon.ml
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/111/trunk/hunpos/lexicon.ml
+END
+suffix_guesser.ml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/111/trunk/hunpos/suffix_guesser.ml
+END
+special_tokens.ml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/106/trunk/hunpos/special_tokens.ml
+END
+trainer.ml
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/83/trunk/hunpos/trainer.ml
+END
+viterbi.ml
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/111/trunk/hunpos/viterbi.ml
+END
+ngram.ml
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/111/trunk/hunpos/ngram.ml
+END
+io.ml
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/108/trunk/hunpos/io.ml
+END
+tagger.ml
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/111/trunk/hunpos/tagger.ml
+END
+hmm_tagger.ml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/106/trunk/hunpos/hmm_tagger.ml
+END
+linear_interpolated_lm.ml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/111/trunk/hunpos/linear_interpolated_lm.ml
+END
+morphtable.ml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/105/trunk/hunpos/morphtable.ml
+END
+tagandtest.ml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/59/trunk/hunpos/tagandtest.ml
+END

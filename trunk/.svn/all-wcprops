@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 23
+/svn/!svn/ver/119/trunk
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/113/trunk/ChangeLog
+END
+myocamlbuild.ml
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/116/trunk/myocamlbuild.ml
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/112/trunk/build.sh
+END
+mateproj.tmproj
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/17/trunk/mateproj.tmproj
+END
+_tags
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/116/trunk/_tags
+END

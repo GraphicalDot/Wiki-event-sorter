@@ -1,0 +1,1 @@
+hunpos/tagger.ml: Getopt Hmm_tagger Io List Morphtable Printf
